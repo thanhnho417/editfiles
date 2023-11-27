@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nội dung đa phương tiện</title>
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+  <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+</head>
+<body>
+
+    <video id="player" playsinline controls data-poster="/path/to/poster.jpg">
+        <source src="The Vexations of a Shut-In Vampire Princess episode 7.mp4" type="video/mp4" />
+      
+        <!-- Captions are optional -->
+        <track src="[SubtitleTools.com] E7 - Sân khấu đỏ thẫm [12973350].vi.vtt" kind="Captions" srclang="vi" label="Vietnamese" default />
+      </video>
+
+<style type="text/css">
+  .container {
+  margin: 50px auto;
+  max-width: 500px;
+}
+</style>
+
+<script type="text/javascript">
+  const player = new Plyr('video', {captions: {active: true}});
+
+// Expose player so it can be used from the console
+window.player = player;
+</script>
+</body>
+</html>
