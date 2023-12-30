@@ -1,0 +1,23 @@
+<!doctype html>
+  <html>
+    <body>
+      <video
+      id="my-video"
+      class="video-js vjs-default-skin vjs-fluid"
+      controls
+      preload="auto"
+      data-setup='{}'
+   >
+      <source
+         src="https://raw.githubusercontent.com/thanhnho417/dqtblog/main/uploads/y2mate.com%20-%20op_1080p.mp4"
+         type="video/mp4"
+      >
+      <track kind="captions" src="https://raw.githubusercontent.com/thanhnho417/dqtblog/main/uploads/%5BSubtitleTools.com%5D%20Kusuriya_OP1%20(1).vtt" srclang="vn" label="Vietnamese" default>
+   </video>
+   
+   <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
+   <script>
+      var player = videojs('my-video')
+   </script>
+    </body>
+  </html>
